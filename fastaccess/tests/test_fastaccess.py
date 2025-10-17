@@ -3,16 +3,15 @@ Comprehensive test suite for fastaccess library.
 """
 
 import os
-import pytest
-from pathlib import Path
-
 # Add parent directory to path for imports
 import sys
+from pathlib import Path
+
+import pytest
+
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from fastaccess.api import FastaStore
-from fastaccess.index import build_index
-
 
 # Test fixtures paths
 TEST_DIR = Path(__file__).parent

@@ -2,8 +2,7 @@
 Random access subsequence retrieval from indexed FASTA files.
 """
 
-from typing import Dict
-from .index import Index, Entry
+from .index import Index
 
 
 def fetch_subseq(path: str, index: Index, name: str, start: int, stop: int) -> str:

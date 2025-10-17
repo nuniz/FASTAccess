@@ -3,12 +3,14 @@
 Comprehensive example demonstrating all features.
 """
 
-from fastaccess import FastaStore
-import tempfile
 import os
+import shutil
+import tempfile
+
+from fastaccess import FastaStore
 
 print("=" * 70)
-print("fastaccess v0.1.0 - Complete Feature Demo")
+print("fastaccess - Complete Feature Demo")
 print("=" * 70)
 
 # ============================================================================
@@ -199,19 +201,4 @@ print(f"  Cache path: {fa_readonly.get_cache_path()}")
 print(f"  Cache exists: {os.path.exists(fa_readonly.get_cache_path())}")
 
 # Cleanup
-import shutil
 shutil.rmtree(user_cache_dir)
-
-# ============================================================================
-print("\n" + "=" * 70)
-print("✅ All features demonstrated successfully!")
-print("=" * 70)
-print("\nKey features:")
-print("  ✓ Basic fetching with 1-based coordinates")
-print("  ✓ Automatic index caching (45x speedup)")
-print("  ✓ Custom cache directories")
-print("  ✓ Description extraction")
-print("  ✓ Reverse complement support")
-print("  ✓ Batch fetching")
-print("  ✓ Cache management")
-print("  ✓ Read-only genome support")
