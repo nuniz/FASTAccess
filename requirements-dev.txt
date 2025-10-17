@@ -1,0 +1,8 @@
+# Development dependencies
+pytest>=7.0
+pytest-cov>=4.0
+mypy>=1.0
+
+# Optional: for benchmarking
+# numpy>=1.20
+# matplotlib>=3.5
