@@ -5,6 +5,12 @@ Efficient random access to subsequences in large FASTA files using byte-level se
 ## Installation
 
 ```bash
+pip install fastaccess
+```
+
+If you’re working with the source code:
+
+```bash
 # Copy the fastaccess directory to your project
 cp -r fastaccess /your/project/
 
