@@ -1,0 +1,2 @@
+# Preserve CRLF line endings in Windows test file
+fastaccess/tests/windows.fa text eol=crlf
